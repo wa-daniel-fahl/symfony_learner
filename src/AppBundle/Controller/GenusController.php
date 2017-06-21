@@ -6,7 +6,7 @@ namespace AppBundle\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class CatController
+class GenusController
 {
     /**
      * @Route("/genus/{genusName}")
