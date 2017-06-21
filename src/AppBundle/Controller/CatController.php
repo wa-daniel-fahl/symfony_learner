@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: daniel
- * Date: 21.06.17
- * Time: 18:25
- */
 
 namespace AppBundle\Controller;
 
@@ -15,10 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 class CatController
 {
     /**
-     * @Route("/cat")
+     * @Route("/genus/{genusName}")
      */
-    public function showAction()
+    public function showAction($genusName)
     {
-        return new Response('Neue Kategorien!');
+        return new Response('The genus: ' . $genusName);
     }
 }
